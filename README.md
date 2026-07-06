@@ -1,6 +1,6 @@
 # Dental Board Newsroom Monitor
 
-Checks state dental board newsroom/updates pages daily and emails you (via MailerSend) when one changes. Built for USA Dental Report.
+Checks state dental board newsroom/updates pages daily and emails you (via SMTP) when one changes. Built for USA Dental Report.
 
 ## How it works
 
@@ -10,7 +10,7 @@ Checks state dental board newsroom/updates pages daily and emails you (via Maile
    - Strips nav/header/footer/script/style noise, keeping just the readable text
    - Hashes that text and compares it to the last stored hash (`data/state/<slug>.json` + `.txt`)
    - If it changed, pulls out the added lines as a lightweight diff
-3. If anything changed, **one summary email** goes out via MailerSend listing every site that changed, its URL, and what looks new.
+3. If anything changed, **one summary email** goes out via SMTP listing every site that changed, its URL, and what looks new.
 4. The updated hashes/snapshots get committed back to the repo automatically so the next run has something to compare against.
 
 The first run for any site just establishes a baseline (no email) — you'll only get alerted on the second-and-later runs when something actually changes.
@@ -19,10 +19,13 @@ The first run for any site just establishes a baseline (no email) — you'll onl
 
 1. Push this folder to a new (or existing) GitHub repo.
 2. In the repo's **Settings → Secrets and variables → Actions**, add:
-   - `MAILERSEND_API_KEY` — your MailerSend API token
-   - `MAILERSEND_FROM_EMAIL` — a verified sender address on your MailerSend domain
+   - `SMTP_HOST` — your SMTP server hostname
+   - `SMTP_USERNAME` — SMTP auth username
+   - `SMTP_PASSWORD` — SMTP auth password
+   - `SMTP_FROM_EMAIL` — the "from" address (must be allowed by your SMTP server/provider)
    - `ALERT_TO_EMAIL` — where you want alerts sent (comma-separate for multiple addresses)
-   - `MAILERSEND_FROM_NAME` — optional, defaults to "USA Dental Report Board Monitor"
+   - `SMTP_PORT` — optional, defaults to `587` (STARTTLS); use `465` for implicit SSL
+   - `SMTP_FROM_NAME` — optional, defaults to "USA Dental Report Board Monitor"
 3. That's it — the workflow (`.github/workflows/check.yml`) is already wired to a daily cron (`0 13 * * *`) and can also be triggered manually from the Actions tab (`workflow_dispatch`).
 
 ## Adding/editing sites

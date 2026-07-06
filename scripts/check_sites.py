@@ -10,28 +10,32 @@ For each site in data/sites.json:
      previously stored text snapshot, and queue an email alert.
   5. Update the stored state (hash + text snapshot) either way.
 
-At the end, if any sites changed, send ONE summary email via the
-MailerSend API covering all changes (rather than one email per site).
+At the end, if any sites changed, send ONE summary email via SMTP
+covering all changes (rather than one email per site).
 
 Required environment variables (set as GitHub Actions secrets):
-  MAILERSEND_API_KEY   - MailerSend API token
-  MAILERSEND_FROM_EMAIL - verified "from" address on your MailerSend domain
-  ALERT_TO_EMAIL       - where alerts should be sent (can be comma-separated)
+  SMTP_HOST         - SMTP server hostname
+  SMTP_USERNAME     - SMTP auth username
+  SMTP_PASSWORD     - SMTP auth password
+  SMTP_FROM_EMAIL   - "from" address (must be allowed by your SMTP server)
+  ALERT_TO_EMAIL    - where alerts should be sent (can be comma-separated)
 
 Optional:
-  MAILERSEND_FROM_NAME  - display name for the from address (default below)
+  SMTP_PORT         - SMTP port (default: 587, uses STARTTLS; use 465 for implicit SSL)
+  SMTP_FROM_NAME    - display name for the from address (default below)
 """
 
 import os
 import re
 import sys
 import json
+import smtplib
 import hashlib
 import difflib
 import pathlib
 import datetime
-import urllib.request
-import urllib.error
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 import requests
 from bs4 import BeautifulSoup
@@ -122,31 +126,24 @@ def diff_summary(old_text, new_text, max_lines=15):
     return added, removed
 
 
-def send_email(api_key, from_email, from_name, to_emails, subject, html_body, text_body):
-    url = "https://api.mailersend.com/v1/email"
-    payload = {
-        "from": {"email": from_email, "name": from_name},
-        "to": [{"email": e.strip()} for e in to_emails if e.strip()],
-        "subject": subject,
-        "html": html_body,
-        "text": text_body,
-    }
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
-            print(f"MailerSend response: {resp.status}")
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        print(f"MailerSend error {e.code}: {body}", file=sys.stderr)
-        raise
+def send_email(smtp_host, smtp_port, smtp_username, smtp_password, from_email, from_name, to_emails, subject, html_body, text_body):
+    recipients = [e.strip() for e in to_emails if e.strip()]
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = f"{from_name} <{from_email}>" if from_name else from_email
+    msg["To"] = ", ".join(recipients)
+    msg.attach(MIMEText(text_body, "plain"))
+    msg.attach(MIMEText(html_body, "html"))
+
+    smtp_class = smtplib.SMTP_SSL if smtp_port == 465 else smtplib.SMTP
+    with smtp_class(smtp_host, smtp_port, timeout=REQUEST_TIMEOUT) as server:
+        if smtp_port != 465:
+            server.starttls()
+        if smtp_username and smtp_password:
+            server.login(smtp_username, smtp_password)
+        server.sendmail(from_email, recipients, msg.as_string())
+    print(f"Sent email via SMTP ({smtp_host}:{smtp_port}) to {len(recipients)} recipient(s).")
 
 
 def build_email(changes):
@@ -224,20 +221,23 @@ def main():
             print(f"  - {e['state']}: {e['error']}", file=sys.stderr)
 
     if changes:
-        api_key = os.environ.get("MAILERSEND_API_KEY")
-        from_email = os.environ.get("MAILERSEND_FROM_EMAIL")
-        from_name = os.environ.get("MAILERSEND_FROM_NAME", "USA Dental Report Board Monitor")
+        smtp_host = os.environ.get("SMTP_HOST")
+        smtp_port = int(os.environ.get("SMTP_PORT", "587"))
+        smtp_username = os.environ.get("SMTP_USERNAME")
+        smtp_password = os.environ.get("SMTP_PASSWORD")
+        from_email = os.environ.get("SMTP_FROM_EMAIL")
+        from_name = os.environ.get("SMTP_FROM_NAME", "USA Dental Report Board Monitor")
         to_emails = os.environ.get("ALERT_TO_EMAIL", "").split(",")
 
-        if not api_key or not from_email or not to_emails or not to_emails[0].strip():
+        if not smtp_host or not from_email or not to_emails or not to_emails[0].strip():
             print(
-                "MAILERSEND_API_KEY, MAILERSEND_FROM_EMAIL, and ALERT_TO_EMAIL must be set "
+                "SMTP_HOST, SMTP_FROM_EMAIL, and ALERT_TO_EMAIL must be set "
                 "to send alerts. Skipping email; changes were still recorded.",
                 file=sys.stderr,
             )
         else:
             subject, html_body, text_body = build_email(changes)
-            send_email(api_key, from_email, from_name, to_emails, subject, html_body, text_body)
+            send_email(smtp_host, smtp_port, smtp_username, smtp_password, from_email, from_name, to_emails, subject, html_body, text_body)
             print(f"Sent alert email for {len(changes)} changed site(s).")
     else:
         print("\nNo changes detected.")
