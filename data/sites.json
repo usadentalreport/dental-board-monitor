@@ -1,0 +1,206 @@
+[
+  {
+    "state": "Alabama",
+    "board_name": "Board of Dental Examiners of Alabama",
+    "url": "https://dentalboard.org/news-and-announcements/",
+    "slug": "alabama"
+  },
+  {
+    "state": "Arizona",
+    "board_name": "Arizona State Board of Dental Examiners",
+    "url": "https://dentalboard.az.gov/news",
+    "slug": "arizona"
+  },
+  {
+    "state": "Arkansas",
+    "board_name": "Arkansas State Board of Dental Examiners",
+    "url": "https://healthy.arkansas.gov/news/",
+    "slug": "arkansas"
+  },
+  {
+    "state": "California",
+    "board_name": "Dental Board of California",
+    "url": "https://www.dbc.ca.gov/about_us/news_and_alerts.shtml",
+    "slug": "california"
+  },
+  {
+    "state": "Colorado",
+    "board_name": "Colorado Dental Board",
+    "url": "https://dpo.colorado.gov/Dental/News",
+    "slug": "colorado"
+  },
+  {
+    "state": "Connecticut",
+    "board_name": "Connecticut State Dental Commission",
+    "url": "https://portal.ct.gov/dph/news-and-events",
+    "slug": "connecticut"
+  },
+  {
+    "state": "District of Columbia",
+    "board_name": "The DC Board of Dentistry",
+    "url": "https://dchealth.dc.gov/newsroom",
+    "slug": "district-of-columbia"
+  },
+  {
+    "state": "Florida",
+    "board_name": "Florida Board of Dentistry",
+    "url": "https://floridasdentistry.gov/latest-news/",
+    "slug": "florida"
+  },
+  {
+    "state": "Georgia",
+    "board_name": "Georgia Board of Dentistry",
+    "url": "https://gbd.georgia.gov/news",
+    "slug": "georgia"
+  },
+  {
+    "state": "Guam",
+    "board_name": "Guam Board of Examiners for Dentistry",
+    "url": "https://guamhplo.org/happenings/gbed/news",
+    "slug": "guam"
+  },
+  {
+    "state": "Hawaii",
+    "board_name": "Hawaii State Board of Dental Examiners",
+    "url": "https://cca.hawaii.gov/news-releases/",
+    "slug": "hawaii"
+  },
+  {
+    "state": "Illinois",
+    "board_name": "Illinois Board of Dentistry",
+    "url": "https://idfpr.illinois.gov/profs/dentist.html",
+    "slug": "illinois"
+  },
+  {
+    "state": "Iowa",
+    "board_name": "Iowa Dental Board",
+    "url": "https://dial.iowa.gov/news",
+    "slug": "iowa"
+  },
+  {
+    "state": "Maryland",
+    "board_name": "Maryland State Board of Dental Examiners",
+    "url": "https://health.maryland.gov/newsroom/Pages/default.aspx",
+    "slug": "maryland"
+  },
+  {
+    "state": "Massachusetts",
+    "board_name": "Massachusetts Board of Registration in Dentistry",
+    "url": "https://www.mass.gov/orgs/board-of-registration-in-dentistry/news",
+    "slug": "massachusetts"
+  },
+  {
+    "state": "Michigan",
+    "board_name": "Michigan Board of Dentistry",
+    "url": "https://www.michigan.gov/lara/news-releases",
+    "slug": "michigan"
+  },
+  {
+    "state": "Minnesota",
+    "board_name": "Minnesota Board of Dentistry",
+    "url": "https://mn.gov/boards/dentistry/board-information/newsletters/",
+    "slug": "minnesota"
+  },
+  {
+    "state": "Mississippi",
+    "board_name": "Mississippi State Board of Dental Examiners",
+    "url": "https://www.dentalboard.ms.gov/board-newsletters",
+    "slug": "mississippi"
+  },
+  {
+    "state": "Nebraska",
+    "board_name": "Nebraska Board of Dentistry",
+    "url": "https://dhhs.ne.gov/licensure/Documents/DentalBoardNewsletter2022.pdf",
+    "slug": "nebraska"
+  },
+  {
+    "state": "New Hampshire",
+    "board_name": "New Hampshire Board of Dental Examiners",
+    "url": "https://www.oplc.nh.gov/administration/news-and-events",
+    "slug": "new-hampshire"
+  },
+  {
+    "state": "New Jersey",
+    "board_name": "New Jersey State Board of Dentistry",
+    "url": "https://www.njconsumeraffairs.gov/News/Pages/pressreleases.aspx",
+    "slug": "new-jersey"
+  },
+  {
+    "state": "New Mexico",
+    "board_name": "New Mexico Board of Dental Health Care",
+    "url": "https://www.rld.nm.gov/about-us/public-information-hub/press-office/",
+    "slug": "new-mexico"
+  },
+  {
+    "state": "New York",
+    "board_name": "New York State Board for Dentistry",
+    "url": "https://www.op.nysed.gov/professions/dentists/news-current-issues",
+    "slug": "new-york"
+  },
+  {
+    "state": "North Carolina",
+    "board_name": "North Carolina State Board of Dental Examiners",
+    "url": "https://www.ncdentalboard.org/whatsnew.htm",
+    "slug": "north-carolina"
+  },
+  {
+    "state": "North Dakota",
+    "board_name": "North Dakota Board of Dental Examiners",
+    "url": "https://www.nddentalboard.org/news/",
+    "slug": "north-dakota"
+  },
+  {
+    "state": "Northern Mariana Islands",
+    "board_name": "Northern Mariana Islands Health Care Professions Licensing Board",
+    "url": "https://www.cnmilicensing.gov.mp/public-announcements/",
+    "slug": "northern-mariana-islands"
+  },
+  {
+    "state": "Oregon",
+    "board_name": "Oregon Board of Dentistry",
+    "url": "https://www.oregon.gov/dentistry/Pages/newsletters.aspx",
+    "slug": "oregon"
+  },
+  {
+    "state": "Pennsylvania",
+    "board_name": "Pennsylvania State Board of Dentistry",
+    "url": "https://pacast.com/",
+    "slug": "pennsylvania"
+  },
+  {
+    "state": "Tennessee",
+    "board_name": "Tennessee Board of Dentistry",
+    "url": "https://www.tn.gov/health/news.html",
+    "slug": "tennessee"
+  },
+  {
+    "state": "Utah",
+    "board_name": "Utah Dentist and Dental Hygienist Licensing Board",
+    "url": "https://commerce.utah.gov/commerce-news-announcements/",
+    "slug": "utah"
+  },
+  {
+    "state": "Virginia",
+    "board_name": "Virginia Board of Dentistry",
+    "url": "https://www.dhp.virginia.gov/Boards/Dentistry/AbouttheBoard/News/",
+    "slug": "virginia"
+  },
+  {
+    "state": "Washington",
+    "board_name": "Dental Quality Assurance Commission",
+    "url": "https://doh.wa.gov/newsroom",
+    "slug": "washington"
+  },
+  {
+    "state": "West Virginia",
+    "board_name": "West Virginia Board of Dentistry",
+    "url": "https://wvbodv7prod.glsuite.us/GLSuiteWeb/Clients/WVBOD/StaticFiles/Newsletters.aspx",
+    "slug": "west-virginia"
+  },
+  {
+    "state": "Wisconsin",
+    "board_name": "Wisconsin Dentistry Examining Board",
+    "url": "https://dsps.wi.gov/Pages/NewsMedia/Default.aspx",
+    "slug": "wisconsin"
+  }
+]
