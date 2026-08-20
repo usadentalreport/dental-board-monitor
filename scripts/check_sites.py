@@ -115,6 +115,25 @@ def hash_text(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def env(name, default=None):
+    """Read an env var, treating empty/whitespace-only values as unset.
+
+    GitHub Actions sets the variable to an empty string when the secret it
+    references does not exist, so a plain os.environ.get(name, default)
+    never falls back to its default.
+    """
+    return os.environ.get(name, "").strip() or default
+
+
+def parse_port(raw, default=587):
+    try:
+        return int(raw)
+    except (TypeError, ValueError):
+        if raw is not None:
+            print(f"Invalid SMTP_PORT {raw!r}; using {default}.", file=sys.stderr)
+        return default
+
+
 def diff_summary(old_text, new_text, max_lines=15):
     old_lines = old_text.splitlines()
     new_lines = new_text.splitlines()
@@ -221,21 +240,31 @@ def main():
             print(f"  - {e['state']}: {e['error']}", file=sys.stderr)
 
     if changes:
-        smtp_host = os.environ.get("SMTP_HOST")
-        smtp_port = int(os.environ.get("SMTP_PORT", "587"))
-        smtp_username = os.environ.get("SMTP_USERNAME")
-        smtp_password = os.environ.get("SMTP_PASSWORD")
-        from_email = os.environ.get("SMTP_FROM_EMAIL")
-        from_name = os.environ.get("SMTP_FROM_NAME", "USA Dental Report Board Monitor")
-        to_emails = os.environ.get("ALERT_TO_EMAIL", "").split(",")
+        smtp_host = env("SMTP_HOST")
+        smtp_username = env("SMTP_USERNAME")
+        smtp_password = env("SMTP_PASSWORD")
+        from_email = env("SMTP_FROM_EMAIL")
+        from_name = env("SMTP_FROM_NAME", "USA Dental Report Board Monitor")
+        to_emails = [e.strip() for e in env("ALERT_TO_EMAIL", "").split(",") if e.strip()]
 
-        if not smtp_host or not from_email or not to_emails or not to_emails[0].strip():
+        missing = [
+            name
+            for name, value in (
+                ("SMTP_HOST", smtp_host),
+                ("SMTP_FROM_EMAIL", from_email),
+                ("ALERT_TO_EMAIL", to_emails),
+            )
+            if not value
+        ]
+        if missing:
             print(
-                "SMTP_HOST, SMTP_FROM_EMAIL, and ALERT_TO_EMAIL must be set "
-                "to send alerts. Skipping email; changes were still recorded.",
+                f"Not sending email: {', '.join(missing)} is not set. "
+                f"{len(changes)} change(s) were recorded but NOT emailed. "
+                "Add these as repository secrets to receive alerts.",
                 file=sys.stderr,
             )
         else:
+            smtp_port = parse_port(env("SMTP_PORT"))
             subject, html_body, text_body = build_email(changes)
             send_email(smtp_host, smtp_port, smtp_username, smtp_password, from_email, from_name, to_emails, subject, html_body, text_body)
             print(f"Sent alert email for {len(changes)} changed site(s).")
