@@ -141,7 +141,9 @@
     "state": "North Carolina",
     "board_name": "North Carolina State Board of Dental Examiners",
     "url": "https://www.ncdentalboard.org/whatsnew.htm",
-    "slug": "north-carolina"
+    "slug": "north-carolina",
+    "allow_unverified_tls": true,
+    "note": "Server does not send its intermediate certificate; browsers recover via AIA fetching, OpenSSL does not."
   },
   {
     "state": "North Dakota",
