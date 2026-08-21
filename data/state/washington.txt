@@ -1,5 +1,9 @@
 breadcrumb
 Newsroom
+Bat Tests Positive for Rabies at Olympic National Park
+A rabid bat was found at Staircase Bridge, Olympic National Park, Washington on August 9th. The bat was observed swooping at hikers and got caught in an unidentified adult female’s hair. If you or someone you know had any contact with a bat near this area, seek medical care immediately and contact your local health department. See the
+National Park Service news release about the rabid bat
+for more information.
 Subscribe to News Releases
 English
 Español
@@ -20,7 +24,7 @@ Disciplinary Actions
 Health News
 News Archives
 2026
-(107)
+(111)
 2025
 (237)
 2024
@@ -29,6 +33,10 @@ News Archives
 (11)
 RSS
 25 Latest Articles
+Aug 13
+West Coast Health Alliance joint statement on federal Executive Order regarding childhood vaccines
+Aug 05
+DOH celebrates National Immunization Awareness Month, names 2026 Immunization Champion
 Jul 21
 State revokes, suspends licenses, certifications, registrations of health care providers (July 21, 2026)
 Jul 16
@@ -75,7 +83,3 @@ Mar 13
 State disciplines health care providers (03-13-2026)
 Mar 13
 State revokes, suspends licenses, certifications, registrations of health care providers (03-13-2026)
-Mar 13
-State disciplines health care providers (03-13-2026)
-Mar 10
-Youth Science Contest returns with updated Washington Tracking Network website

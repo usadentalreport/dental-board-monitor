@@ -1,0 +1,5 @@
+{
+  "consecutive_failures": 1,
+  "last_error": "403 Client Error: Forbidden for url: https://commerce.utah.gov/commerce-news-announcements/",
+  "last_failed": "2026-08-21T13:36:05.854499+00:00"
+}

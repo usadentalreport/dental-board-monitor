@@ -1,0 +1,5 @@
+{
+  "consecutive_failures": 1,
+  "last_error": "403 Client Error: Forbidden for url: https://www.michigan.gov/lara/news-releases",
+  "last_failed": "2026-08-21T13:35:45.274947+00:00"
+}
