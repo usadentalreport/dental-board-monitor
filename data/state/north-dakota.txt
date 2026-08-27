@@ -71,24 +71,54 @@ Consumers
 Newsbites
 Newsbites
 News
+Administering Nitrous Oxide v. Monitoring Patients
+8/27/2026
+Administering Nitrous Oxide to a Patient
+(a Board-issued permit is required)
+Which staff members may be delegated the duty of
+administering
+nitrous oxide to patients?
+Registered Dental Hygienists.
+Registered Dental Assistants.
+Before a dentist can delegate the duty of administering nitrous oxide to a patient, the RDH or RDA must first complete Board-approved training, submit a nitrous oxide permit application, and be granted a permit by the Board.
+The application for a nitrous oxide administration permit may be found here:
+https://www.nddentalboard.org/www/download_resource.asp?id=540
+Which staff members
+may not
+be delegated the duty of administering nitrous oxide to patients under any circumstance?
+Qualified Dental Assistants.
+Qualified Dental Assistant-Limited Radiology Registrants.
+Unregistered Dental Assistants.
+The law does not allow QDAs, QDA-LRRs, and UDAs to be granted a permit to administer nitrous oxide to patients.
+Monitoring a Patient Who has been Induced into Nitrous Oxide
+Which staff members may be delegated the duty of
+monitoring
+a patient who is induced into nitrous oxide?
+Registered Dental Hygienists and Registered Dental Assistants.
+RDHs and RDAs may monitor patients who are induced into nitrous oxide. They do not need any additional training beyond what they originally completed when they became RDHs and RDAs. They must be under a dentist’s indirect supervision and do not need to be issued a permit for this duty.
+Fully trained Qualified Dental Assistants, Qualified Dental Assistant-Limited Radiology Registrants and Unregistered Dental Assistants.
+Before monitoring a patient who a permit-holder has induced into nitrous oxide, a QDA, a QDA-LRR, or a UDA must be fully trained on the duty to the dentist’s satisfaction. The training can be in-house, can include outside resources, or a combination of education tools. Once the dentist is satisfied with the skill level of their assistant, the dentist may delegate this duty. The dentist must retain the training records.
+The assistant must be under a dentist’s direct supervision and does not need to be issued a permit for this duty.
+Which staff members
+may not
+be delegated the duty of monitoring a patient who has been induced into nitrous oxide?
+A QDA, QDA-LRR, or UDA who has not been fully trained to the satisfaction of the supervising dentist.
+In addition to understanding the above summary, it is important to review the laws relating to these (and all) duties. Please do so. The laws may be found here:
+Laws and Rules - ND Dental Board
+. Specific cites to the nitrous oxide duties referenced above are as follows:
+A nitrous oxide permit is required: NDAC 20-02-01-05(1)(f)
+An RDH who has been issued a nitrous oxide administration permit from the Board may administer nitrous oxide to a patient: NDAC 20-04-01-01(2)(g)
+An RDH may monitor patients induced into nitrous oxide: NDAC 20-04-01-01(2)(d)
+An RDA who has been issued a nitrous oxide administration permit from the Board may administer nitrous oxide to a patient: NDAC 20-03-01-01(4)
+An RDA may monitor patients induced into nitrous oxide: NDAC 20-03-01-01(5)(e)
+A QDA, QDA-LRR, and UDA who has been fully trained to the satisfaction of the dentist may monitor patients who have been induced into nitrous oxide: NDAC 20-03-01-01(a)(12).
 Professional Health Program-Fee Required
 7/9/2026
-Login to pay the required fee now!
-Professional Health Program Fee Payment Form - ND Dental Board
-7/9/2026 - You should have received the following notice via email from the ND Dental Board Office providing you with information and instructions on how to pay the $75 fee for the PHP.
-Dear Dentists:
-A recent change to state law allows dentists who are actively licensed in North Dakota to have access to the Professional Health Program. The PHP is designed for those who may not be able to safely practice dentistry due to a mental, physical, or emotional condition, or due to alcohol or substance use. Dentists may voluntarily and confidentially engage with the PHP, or may be ordered into the Program by the Board. For more information about the PHP, see
-Home | North Dakota Professional Health Program
-.
-All actively licensed dentists and applicants are assessed fees to offset portions of the cost of administering the PHP. Please proceed to the following page by July 17th to submit payment of the $75.00 fee.
-Professional Health Program Fee Payment Form - ND Dental Board
-.
-Dentists will also be assessed a $75.00 fee each time they renew their license (the next renewal will be in the Fall of 2027), and those applying for a license for the first time will also be assessed a $75.00 fee at the time of application. One hundred percent of these fees will be used to offset some of costs of operating the PHP on behalf of dentists. None of these fees will be used to pay for any treatment a dentist participating in the PHP receives. Each dentist-participant is responsible for the cost of their own care—whether through their health insurance or other means.
-We sincerely appreciate your support in getting this life-changing rule passed, and your prompt payment of the fee.
-Let me know if you have any questions.
-Sincerely,
-David Schaibley
-Executive Director - North Dakota State Board of Dental Examiners
+New rules took effect on April 1, 2026. Part of those rules require dentists to pay a $75.00 fee to offset the cost of operating the new Professional Health Program. That $75.00 payment is due now!
+Internet Searches and Artificial Intelligence
+2/9/2026
+Internet browsers and artificial intelligence tools can be an invaluable aid for efficiently navigating issues in the dental profession. At the same time, they must be used with care.
+The Board has...
 Consumers
 Complaints Overview
 Board Meetings
