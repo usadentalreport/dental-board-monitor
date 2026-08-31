@@ -2,7 +2,7 @@
   "hash": "90b0dffbc0f0ed0f1833848bbbf34d399c3e757f3a382cd717d4c47cb0f8271a",
   "last_checked": "2026-08-29T16:54:03.081195+00:00",
   "last_changed": "2026-07-22T14:52:15.159045+00:00",
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "last_error": "403 Client Error: Forbidden for url: https://dpo.colorado.gov/Dental/News",
-  "last_failed": "2026-08-30T17:00:48.810386+00:00"
+  "last_failed": "2026-08-31T19:16:33.529358+00:00"
 }
