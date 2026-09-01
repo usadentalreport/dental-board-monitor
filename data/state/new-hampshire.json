@@ -1,8 +1,6 @@
 {
   "hash": "c3eca15d9efd5a1e2ecde741e5d81ea1bdffd8b70b47558068f9f8668e637da6",
-  "last_checked": "2026-08-24T13:42:38.383182+00:00",
+  "last_checked": "2026-09-01T17:00:58.367235+00:00",
   "last_changed": "2026-08-21T13:35:48.111522+00:00",
-  "consecutive_failures": 7,
-  "last_error": "403 Client Error: Forbidden for url: https://www.oplc.nh.gov/administration/news-and-events",
-  "last_failed": "2026-08-31T19:17:57.646212+00:00"
+  "consecutive_failures": 0
 }
