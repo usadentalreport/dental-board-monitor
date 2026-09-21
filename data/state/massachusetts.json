@@ -1,5 +1,5 @@
 {
-  "consecutive_failures": 31,
+  "consecutive_failures": 32,
   "last_error": "403 Client Error: Forbidden for url: https://www.mass.gov/orgs/board-of-registration-in-dentistry/news",
-  "last_failed": "2026-09-20T16:33:42.440130+00:00"
+  "last_failed": "2026-09-21T18:21:11.097450+00:00"
 }
