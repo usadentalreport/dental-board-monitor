@@ -1,5 +1,5 @@
 {
-  "consecutive_failures": 35,
+  "consecutive_failures": 36,
   "last_error": "403 Client Error: Forbidden for url: https://guamhplo.org/happenings/gbed/news",
-  "last_failed": "2026-09-24T17:36:42.562461+00:00"
+  "last_failed": "2026-09-25T17:36:09.564121+00:00"
 }
