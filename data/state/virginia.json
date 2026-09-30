@@ -2,5 +2,7 @@
   "hash": "4e87cabaf431542f4c82e604f9190698954596cf84673183c6c354e20ee5c8c8",
   "last_checked": "2026-09-29T18:21:32.548518+00:00",
   "last_changed": "2026-09-18T16:46:17.480108+00:00",
-  "consecutive_failures": 0
+  "consecutive_failures": 1,
+  "last_error": "HTTPSConnectionPool(host='www.dhp.virginia.gov', port=443): Max retries exceeded with url: /Boards/Dentistry/AbouttheBoard/News/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.dhp.virginia.gov', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+  "last_failed": "2026-09-30T18:11:11.569213+00:00"
 }
