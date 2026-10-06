@@ -2,7 +2,7 @@
   "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "last_checked": "2026-09-27T17:20:31.401203+00:00",
   "last_changed": "2026-08-21T13:36:07.052253+00:00",
-  "consecutive_failures": 8,
-  "last_error": "404 Client Error: Not Found for url: https://dsps.wi.gov/Pages/NewsMedia/Default.aspx",
-  "last_failed": "2026-10-05T21:01:37.969021+00:00"
+  "consecutive_failures": 9,
+  "last_error": "HTTPSConnectionPool(host='dsps.wi.gov', port=443): Max retries exceeded with url: /Pages/NewsMedia/Default.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='dsps.wi.gov', port=443) at 0x7f0836e32c90>, 'Connection to dsps.wi.gov timed out. (connect timeout=25)'))",
+  "last_failed": "2026-10-06T18:42:59.817228+00:00"
 }
