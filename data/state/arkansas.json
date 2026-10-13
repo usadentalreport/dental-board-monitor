@@ -2,5 +2,7 @@
   "hash": "6b6b7a4ac3623cf39b62a1a1d823f5712ef87fcd971601ebbcafe4a50bf1ab57",
   "last_checked": "2026-10-12T21:26:18.123194+00:00",
   "last_changed": "2026-07-22T14:52:14.617652+00:00",
-  "consecutive_failures": 0
+  "consecutive_failures": 1,
+  "last_error": "403 Client Error: Forbidden for url: https://healthy.arkansas.gov/news/",
+  "last_failed": "2026-10-13T19:35:18.070111+00:00"
 }
