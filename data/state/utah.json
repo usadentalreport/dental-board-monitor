@@ -1,8 +1,6 @@
 {
   "hash": "b00023b059b3211f3a55a28609a1fea4104cde7423cbbe944b0e91a07f328203",
-  "last_checked": "2026-10-11T17:51:14.497927+00:00",
+  "last_checked": "2026-10-14T17:39:32.070687+00:00",
   "last_changed": "2026-10-09T18:33:52.542131+00:00",
-  "consecutive_failures": 2,
-  "last_error": "403 Client Error: Forbidden for url: https://commerce.utah.gov/commerce-news-announcements/",
-  "last_failed": "2026-10-13T19:35:40.176612+00:00"
+  "consecutive_failures": 0
 }
