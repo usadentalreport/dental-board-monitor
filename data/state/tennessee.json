@@ -2,5 +2,7 @@
   "hash": "7e488c9804c9162318f26ecb8cfd67edddd2288df5ce3a274e89165602908004",
   "last_checked": "2026-10-15T17:25:40.947163+00:00",
   "last_changed": "2026-10-09T18:33:52.266086+00:00",
-  "consecutive_failures": 0
+  "consecutive_failures": 1,
+  "last_error": "403 Client Error: Forbidden for url: https://www.tn.gov/health/news.html",
+  "last_failed": "2026-10-16T17:01:36.076705+00:00"
 }
