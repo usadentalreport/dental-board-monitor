@@ -2,7 +2,7 @@
   "hash": "7e488c9804c9162318f26ecb8cfd67edddd2288df5ce3a274e89165602908004",
   "last_checked": "2026-10-25T16:53:22.699536+00:00",
   "last_changed": "2026-10-09T18:33:52.266086+00:00",
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "last_error": "HTTPSConnectionPool(host='www.tn.gov', port=443): Max retries exceeded with url: /health/news.html (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))",
-  "last_failed": "2026-10-27T18:25:43.704543+00:00"
+  "last_failed": "2026-10-28T18:33:07.217285+00:00"
 }

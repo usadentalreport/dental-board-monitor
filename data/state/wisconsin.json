@@ -1,8 +1,6 @@
 {
-  "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "last_checked": "2026-09-27T17:20:31.401203+00:00",
-  "last_changed": "2026-08-21T13:36:07.052253+00:00",
-  "consecutive_failures": 30,
-  "last_error": "404 Client Error: Not Found for url: https://dsps.wi.gov/Pages/NewsMedia/Default.aspx",
-  "last_failed": "2026-10-27T18:25:45.103977+00:00"
+  "hash": "2bc2e4c475775cf808d967464fc446a8bacd480ad48cfdd574916349aca44612",
+  "last_checked": "2026-10-28T18:33:08.558197+00:00",
+  "last_changed": "2026-10-28T18:33:08.558197+00:00",
+  "consecutive_failures": 0
 }
