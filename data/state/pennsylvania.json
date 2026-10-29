@@ -2,5 +2,7 @@
   "hash": "92e3f9b0eef4f3f1209d1d26fc3bf357b1501306803622a25f516469526c3d5b",
   "last_checked": "2026-10-28T18:33:05.842845+00:00",
   "last_changed": "2026-07-22T14:52:44.303252+00:00",
-  "consecutive_failures": 0
+  "consecutive_failures": 1,
+  "last_error": "HTTPSConnectionPool(host='pacast.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='pacast.com', port=443): Read timed out. (read timeout=25)\"))",
+  "last_failed": "2026-10-29T18:43:22.851317+00:00"
 }
