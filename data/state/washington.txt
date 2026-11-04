@@ -21,7 +21,7 @@ Disciplinary Actions
 Health News
 News Archives
 2026
-(123)
+(125)
 2025
 (237)
 2024
@@ -30,6 +30,8 @@ News Archives
 (11)
 RSS
 25 Latest Articles
+Nov 03
+State revokes, suspends licenses, certifications, registrations of health care providers (November 3, 2026)
 Oct 27
 State disciplines health care providers: October 27, 2026
 Oct 26
@@ -78,5 +80,3 @@ Apr 30
 Recent measles cases in Washington raise concern about undetected community spread
 Apr 29
 2025 Healthy Youth Survey results point to steady course in Washington youth well-being
-Apr 28
-Cleaner waters, safer shellfish: Washington reports progress in harvest areas
