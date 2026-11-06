@@ -1,8 +1,6 @@
 {
   "hash": "92e3f9b0eef4f3f1209d1d26fc3bf357b1501306803622a25f516469526c3d5b",
-  "last_checked": "2026-11-04T20:06:55.950793+00:00",
+  "last_checked": "2026-11-06T19:44:41.035346+00:00",
   "last_changed": "2026-07-22T14:52:44.303252+00:00",
-  "consecutive_failures": 1,
-  "last_error": "HTTPSConnectionPool(host='pacast.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pacast.com', port=443) at 0x7f84f44b8050>, 'Connection to pacast.com timed out. (connect timeout=25)'))",
-  "last_failed": "2026-11-05T20:25:11.472011+00:00"
+  "consecutive_failures": 0
 }

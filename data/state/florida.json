@@ -1,8 +1,6 @@
 {
   "hash": "617f998a1b382feba7f368b2d361b0842b5965ebc6c4977da17399ce614d9704",
-  "last_checked": "2026-11-04T20:06:32.514869+00:00",
+  "last_checked": "2026-11-06T19:44:23.944933+00:00",
   "last_changed": "2026-11-04T20:06:32.514869+00:00",
-  "consecutive_failures": 1,
-  "last_error": "HTTPSConnectionPool(host='floridasdentistry.gov', port=443): Max retries exceeded with url: /latest-news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='floridasdentistry.gov', port=443) at 0x7f84f4aad8d0>, 'Connection to floridasdentistry.gov timed out. (connect timeout=25)'))",
-  "last_failed": "2026-11-05T20:23:41.864976+00:00"
+  "consecutive_failures": 0
 }

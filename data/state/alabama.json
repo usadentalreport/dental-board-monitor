@@ -1,8 +1,6 @@
 {
-  "hash": "740ee72d94f6f5895183c8f0fc86d34063bb9e23fd585c90b1ca88003c067810",
-  "last_checked": "2026-11-04T20:06:25.645741+00:00",
-  "last_changed": "2026-10-07T19:06:39.332315+00:00",
-  "consecutive_failures": 1,
-  "last_error": "HTTPSConnectionPool(host='dentalboard.org', port=443): Max retries exceeded with url: /news-and-announcements/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='dentalboard.org', port=443) at 0x7f84f4b95390>, 'Connection to dentalboard.org timed out. (connect timeout=25)'))",
-  "last_failed": "2026-11-05T20:22:21.684289+00:00"
+  "hash": "7e775329f0e461334a5050d7c2918269aba70558371e873e53fce0741f6c82a8",
+  "last_checked": "2026-11-06T19:44:21.121130+00:00",
+  "last_changed": "2026-11-06T19:44:21.121130+00:00",
+  "consecutive_failures": 0
 }
