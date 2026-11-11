@@ -2,5 +2,7 @@
   "hash": "6ce9584df7ae085687ae1367db4498586db7d00f804061b0b81283d206eafbfb",
   "last_checked": "2026-11-10T20:03:32.745373+00:00",
   "last_changed": "2026-10-03T16:49:11.457384+00:00",
-  "consecutive_failures": 0
+  "consecutive_failures": 1,
+  "last_error": "403 Client Error: Forbidden for url: https://dentalboard.az.gov/news",
+  "last_failed": "2026-11-11T19:54:04.601218+00:00"
 }
