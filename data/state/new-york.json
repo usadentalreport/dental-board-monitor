@@ -2,7 +2,7 @@
   "hash": "459ec47ef69471e37a9246014b394c666d7579bb756f8c3ef17456eb485a4b80",
   "last_checked": "2026-10-28T18:32:52.810876+00:00",
   "last_changed": "2026-07-22T14:52:29.265407+00:00",
-  "consecutive_failures": 14,
+  "consecutive_failures": 15,
   "last_error": "HTTPSConnectionPool(host='www.op.nysed.gov', port=443): Max retries exceeded with url: /professions/dentists/news-current-issues (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))",
-  "last_failed": "2026-11-11T19:54:17.875805+00:00"
+  "last_failed": "2026-11-12T20:30:52.065346+00:00"
 }
